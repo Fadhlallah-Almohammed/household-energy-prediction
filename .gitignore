@@ -1,0 +1,23 @@
+# Local Python and notebook files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+
+# Real data and generated outputs: keep them in shared storage
+data/raw/*
+!data/raw/.gitkeep
+data/pilot/*
+!data/pilot/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+results/*
+!results/.gitkeep
+figures/*
+!figures/.gitkeep
+archive/*
+!archive/.gitkeep
+*.zip
+*.csv.gz
