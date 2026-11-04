@@ -3,6 +3,73 @@
 Predict next-hour electricity use from two earlier readings. Compare linear regression with
 previous-hour and previous-day predictions. Use the existing selected dataset.
 
+## Start work on your branch
+
+Use Git Bash. Accept M1's GitHub invitation first.
+
+### First time only
+
+Clone the repository into a new folder, then open it:
+
+```bash
+git clone https://github.com/Fadhlallah-Almohammed/household-energy-prediction.git
+cd household-energy-prediction
+```
+
+Get the data files from M1's shared Drive and place them in the folders listed below.
+
+### At the start of each week
+
+From the repository folder, get the latest main and create your weekly branch:
+
+```bash
+git switch main
+git pull origin main
+git switch -c m2-week-1
+```
+
+Replace `m2-week-1` with your member code and week, such as `m3-week-1` or `m2-week-2`.
+Use a new name each week. Finish the previous branch's work before switching branches.
+Work only on your assigned files. Your changes stay on your branch until M1 merges them.
+
+### Submit on Saturday
+
+Check your branch name and changed files:
+
+```bash
+git branch --show-current
+git status --short
+```
+
+The branch name should be your weekly branch. Then save the commit and push that branch:
+
+```bash
+git add .
+git commit -m "Complete M2 week 1 tasks"
+git push -u origin HEAD
+```
+
+Change the commit message to your member and week. The push command uploads your current branch.
+
+On GitHub:
+
+1. Open **Pull requests > New pull request**.
+2. Set **base** to `main` and **compare** to your weekly branch.
+3. Use a title such as **M2 - Week 1: hourly data**.
+4. List your completed task IDs and the locations of required output files.
+5. Click **Create pull request** and tell M1 it is ready.
+
+M1 reviews and merges the pull request. Members submit through their branches and do not merge into main.
+The next week starts from the updated main again.
+
+### Submit outputs that Git ignores
+
+The ignore rules exclude readings, generated CSVs and figures. These files will not be uploaded by `git push`.
+Put required outputs in the shared Drive using the same folders shown in the task plan,
+such as `data/processed/`, `results/` or `figures/`. Add their shared locations to your pull request.
+Upload the final weekly outputs and open the pull request on Saturday.
+Working files can remain shared during the week so the next member can read them.
+
 ## Weekly tasks
 
 Open plan/weekly_tasks.pdf and go to your member page.
