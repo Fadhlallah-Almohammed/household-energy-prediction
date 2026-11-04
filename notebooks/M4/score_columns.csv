@@ -1,0 +1,10 @@
+column,type,meaning
+task_id,text,task that produced the scores
+split,text,prototype / validation / test
+rule,text,baseline or model name
+n_total,int,all rows
+n_missing_target,int,rows removed because the actual is missing
+n_missing_prediction,int,rows removed because a prediction is missing
+n_scored,int,rows used for scoring (same for all rules)
+mae_kwh,float,MAE in kWh
+rmse_kwh,float,RMSE in kWh

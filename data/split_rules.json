@@ -1,0 +1,21 @@
+{
+  "method": "sort SHA256 of UTF-8 42:<LCLid>; lowest 60 hashes reserved",
+  "development_homes": 240,
+  "reserved_homes": 60,
+  "periods": {
+    "TRAIN": [
+      "2013-01-01",
+      "2013-09-01"
+    ],
+    "VALIDATION": [
+      "2013-09-01",
+      "2013-11-01"
+    ],
+    "TEST": [
+      "2013-11-01",
+      "2014-01-01"
+    ]
+  },
+  "boundary": "start inclusive, end exclusive; source-label dates",
+  "status": "warehouse implementation default; no model fitting or final evaluation performed"
+}
