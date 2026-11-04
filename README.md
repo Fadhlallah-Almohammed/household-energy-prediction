@@ -62,13 +62,58 @@ On GitHub:
 M1 reviews and merges the pull request. Members submit through their branches and do not merge into main.
 The next week starts from the updated main again.
 
-### Submit outputs that Git ignores
+## Shared project Drive
 
-The ignore rules exclude readings, generated CSVs and figures. These files will not be uploaded by `git push`.
-Put required outputs in the shared Drive using the same folders shown in the task plan,
-such as `data/processed/`, `results/` or `figures/`. Add their shared locations to your pull request.
-Upload the final weekly outputs and open the pull request on Saturday.
-Working files can remain shared during the week so the next member can read them.
+M1 shares the Drive folder link with the team. The shared folder contains:
+
+```text
+Project Drive/
+├── household_energy_drive_files.zip
+├── data/processed/
+├── results/
+└── figures/
+```
+
+### Download the starting data once
+
+1. Download `household_energy_drive_files.zip` from the shared Drive.
+2. Extract it inside your LOCAL `household-energy-prediction` folder.
+3. Check these files are present:
+
+```text
+household-energy-prediction/
+└── data/
+    ├── raw/
+    │   ├── half_hour_readings_2013.csv
+    │   ├── household_metadata.csv
+    │   └── selected_household_ids.csv
+    └── pilot/
+        ├── half_hour_sample.csv
+        └── hourly_sample.csv
+```
+
+The `data/` folder joins the one already in your clone. Avoid an extra ZIP-name folder
+between the project folder and `data/`. The split files, notebooks and task plan come from GitHub.
+
+### Get another member's output
+
+Before running a task, download its required output files from the shared Drive.
+Put each file in the same location inside your local project. For example:
+
+`Drive/data/processed/hourly_readings.csv` -> `your-project/data/processed/hourly_readings.csv`
+
+Generated CSVs and figures are ignored by Git, so `git pull` does not download them.
+
+### Upload your Saturday outputs
+
+- Prepared data and check/count CSVs -> shared Drive `data/processed/`.
+- Predictions and error-score CSVs -> shared Drive `results/`.
+- Charts and captions -> shared Drive `figures/`.
+- Updated notebooks, report, slides and task checklist -> your GitHub branch and pull request.
+
+Use the filenames in your task's Save/submit list. On Saturday, upload the required
+generated files, open your pull request and add their shared file links or locations.
+Working files can stay shared during the week so the next member can use them.
 
 ## Weekly tasks
 
