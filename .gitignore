@@ -13,8 +13,6 @@ data/pilot/*
 !data/pilot/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
-results/*
-!results/.gitkeep
 figures/*
 !figures/.gitkeep
 archive/*
