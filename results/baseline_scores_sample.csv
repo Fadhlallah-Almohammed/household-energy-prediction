@@ -1,0 +1,3 @@
+task_id,split,rule,n_total,n_missing_target,n_missing_prediction,n_scored,mae_kwh,rmse_kwh
+M4-W07-T02,prototype,previous_hour,504,6,80,418,0.3040574153110048,0.5074701561338436
+M4-W07-T02,prototype,previous_day,504,6,80,418,0.310679426076555,0.5200322395963711
