@@ -1,0 +1,3 @@
+task_id,split,rule,n_total,n_missing_target,n_missing_prediction,n_scored,mae_kwh,rmse_kwh
+M4-W2,validation,previous_hour,349127,0,0,349127,0.17448105990083834,0.35984139585871316
+M4-W2,validation,previous_day,349127,0,0,349127,0.20938197274917159,0.43153180179639306
